@@ -1,6 +1,7 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 type A = MyCapitalize<'a'>
 type B = MyCapitalize<'foobar'>
+type C = MyCapitalize<''>
 type cases = [
   Expect<Equal<MyCapitalize<'foobar'>, 'Foobar'>>,
   Expect<Equal<MyCapitalize<'FOOBAR'>, 'FOOBAR'>>,
